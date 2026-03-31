@@ -1,0 +1,7 @@
+FastAPI Web 框架相关
+
+fastapi>=0.103.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+
+继承基础 SDK 的需求 (在 Docker 中会一并安装)
