@@ -1,0 +1,276 @@
+{
+  "mdt_case": {
+    "case_id": "03",
+    "title": "The 'Fatal Masquerader' Patient",
+    "patient_profile": {
+      "age": 48,
+      "gender": "Male",
+      "chief_complaint": "Sudden severe cervico-occipital pain with left hemiplegia for 2 hours",
+      "history_of_present_illness": "Patient felt a sudden tearing pain in the back of his neck while swinging a golf club 2 hours ago, followed immediately by severe vertigo and vomiting. 10 minutes later, family noticed his left limbs were completely paralyzed and speech was slurred. Rushed to the stroke center via EMS.",
+      "past_medical_history": [
+        "Previously healthy, no history of HTN or DM",
+        "Recent unexplained weight loss (~5kg / 3 months)",
+        "Frequent complaints of right ear fullness and hearing loss (past 1 month)"
+      ]
+    },
+    "image_repository": [
+      {
+        "id": "A",
+        "region": "Neurovascular (Neck MRA)",
+        "file_name": "synpic55889.jpg",
+        "role": "Core Key Image - Vertebral artery dissection (VAD), explains the direct vascular cause of the sudden stroke"
+      },
+      {
+        "id": "B",
+        "region": "Brain (MRI FLAIR Axial)",
+        "file_name": "synpic55230.jpg",
+        "role": "Core Key Image - Massive acute cerebral infarction with severe vasogenic brain edema (Hemisphere/Basal ganglia)"
+      },
+      {
+        "id": "C",
+        "region": "Brain/Skull Base (MRI T1+C Coronal)",
+        "file_name": "synpic55832.jpg",
+        "role": "Key Etiology Image - Right temporal bone/skull base invasive destructive lesion with dural enhancement"
+      },
+      {
+        "id": "D",
+        "region": "Brain/Skull Base (MRI T2 Axial)",
+        "file_name": "synpic55706.jpg",
+        "role": "Key Etiology Image - Hyperintense solid mass in right mastoid/temporal region compressing surrounding structures"
+      },
+      {
+        "id": "E",
+        "region": "Temporal Bone (High-Resolution CT)",
+        "file_name": "synpic55564.jpg",
+        "role": "Key Image - Clearly demonstrates details of malignant erosive destruction of the right temporal bone and middle/inner ear"
+      },
+      {
+        "id": "F",
+        "region": "Brain/Skull (MRI T1 Coronal)",
+        "file_name": "synpic55708.jpg",
+        "role": "Definitive Clue Image - Abnormal skull bone marrow signal, indicating diffuse marrow infiltration (Metastasis or Multiple Myeloma)"
+      },
+      {
+        "id": "G",
+        "region": "Chest (MRI Large FOV)",
+        "file_name": "synpic55670.jpg",
+        "role": "Concurrent/Primary Search - Suspicious mass in the lung apex/mediastinum (non-diagnostic sequence, but hints at primary source)"
+      },
+      {
+        "id": "H",
+        "region": "Brain (MRI T1 Sagittal)",
+        "file_name": "synpic55335.jpg",
+        "role": "Distractor - Huge midline arachnoid cyst / benign cyst posterior to the 3rd ventricle (incidental, unrelated to acute event)"
+      },
+      {
+        "id": "I",
+        "region": "Brain (MRI Axial)",
+        "file_name": "synpic55154.jpg",
+        "role": "Distractor - Incidental tiny cephalocele, increases reading complexity"
+      },
+      {
+        "id": "J",
+        "region": "Oral/Neck (Maxillofacial/Neck MRI)",
+        "file_name": "synpic55352.jpg",
+        "role": "Distractor - Normal oropharynx and upper neck field of view"
+      }
+    ],
+    "ehr_and_transcript_log": [
+      {
+        "timestamp": "10:00",
+        "role": "EMS Handoff",
+        "content": "48yo male, sudden onset posterior neck pain with left hemiplegia on the golf course. Time of onset recorded as 08:00. Pre-hospital blood glucose is normal."
+      },
+      {
+        "timestamp": "10:05",
+        "role": "ED Stroke Alert",
+        "content": "Stroke team activated. Patient currently GCS 11 (E3V3M5). Left upper/lower extremity strength 0/5, right 5/5. Positive nuchal rigidity."
+      },
+      {
+        "timestamp": "10:10",
+        "role": "Neurology Resident",
+        "content": "NIHSS score is 18. High suspicion for posterior circulation or large vessel occlusion stroke. Rushing to CT for Head/Neck CTA + CTP."
+      },
+      {
+        "timestamp": "10:25",
+        "role": "Radiology - CT",
+        "content": "Non-contrast head CT shows no hemorrhage. Neck CTA suggests irregular stenosis of the right vertebral artery (V2-V3 segment), suspecting dissection. Perfusion deficit in the MCA territory. Recommend emergent MRA and MRI evaluation."
+      },
+      {
+        "timestamp": "10:45",
+        "role": "Radiology - MRA",
+        "content": "Neck MRA (synpic55889.jpg) confirms: Long-segment double-lumen sign and intimal flap in the right vertebral artery. Diagnosed as acute Vertebral Artery Dissection (VAD)."
+      },
+      {
+        "timestamp": "11:00",
+        "role": "Radiology - MRI",
+        "content": "MRI FLAIR sequence (synpic55230.jpg) shows massive acute cerebral infarction in the right cerebral hemisphere and basal ganglia, with severe edema and midline shift."
+      },
+      {
+        "timestamp": "11:15",
+        "role": "Neuro-Interventional",
+        "content": "Patient is outside the IV thrombolysis window, and imaging (synpic55230.jpg) suggests the core infarct is too large; mechanical thrombectomy may cause fatal hemorrhagic transformation. Recommend conservative ICP (intracranial pressure) management."
+      },
+      {
+        "timestamp": "11:30",
+        "role": "Neurology Attending",
+        "content": "Young male, golf swing causing VAD (classic mechanical injury), leading to massive cerebral infarction. The logic seems perfect. Transfer to NICU to monitor for herniation."
+      },
+      {
+        "timestamp": "12:00",
+        "role": "NICU Admission",
+        "content": "Administering alternating Mannitol and Hypertonic Saline for dehydration. Strict pupillary monitoring."
+      },
+      {
+        "timestamp": "13:30",
+        "role": "Radiology Addendum 1 (Abnormality Alert)",
+        "content": "Wait, we noticed something wrong while reviewing the full-brain MRI. Though focus was on the infarct, please look at the T1 coronal image (synpic55708.jpg)."
+      },
+      {
+        "timestamp": "13:35",
+        "role": "Radiology Attending",
+        "content": "synpic55708.jpg shows extremely heterogeneous marrow signal in the entire calvaria; the normal high-signal fat is replaced by diffuse low signal. This represents diffuse bone marrow infiltration!"
+      },
+      {
+        "timestamp": "13:40",
+        "role": "Radiology Attending",
+        "content": "Furthermore, in the right skull base / temporal bone region, both T2 axial (synpic55706.jpg) and T1+C coronal (synpic55832.jpg) show an invasive solid mass with dural enhancement."
+      },
+      {
+        "timestamp": "13:50",
+        "role": "ENT Consult",
+        "content": "Emergent consult. History mentions 'right ear fullness for 1 month'. Combined with MRI (synpic55832.jpg), highly suspicious for a malignant temporal bone tumor. Recommend STAT high-resolution temporal bone CT."
+      },
+      {
+        "timestamp": "14:15",
+        "role": "Radiology - Temporal CT",
+        "content": "High-Res Temporal CT (synpic55564.jpg) results: Right petrous apex, mastoid, and middle ear exhibit obvious moth-eaten, destructive bone resorption. This is absolutely not simple mastoiditis; it is malignant destruction."
+      },
+      {
+        "timestamp": "14:30",
+        "role": "MDT Emergency Assembly",
+        "content": "Fundamental shift in the case. Urgent joint rounds with Neuro-ICU, Neurosurgery, ENT, Hematology-Oncology, and Radiology."
+      },
+      {
+        "timestamp": "14:35",
+        "role": "Neurology Attending",
+        "content": "I understand now! The vertebral artery dissection (synpic55889.jpg) wasn't an accident from the golf swing! The malignant tumor at the skull base/jugular foramen directly invaded or destroyed the adjacent vessel wall, causing a spontaneous dissection!"
+      },
+      {
+        "timestamp": "14:40",
+        "role": "Heme-Oncology Attending",
+        "content": "Completely agree. Combined with extensive marrow infiltration (synpic55708.jpg) and temporal bone destruction (synpic55564.jpg), this is typically seen in advanced metastatic adenocarcinoma (e.g., lung, prostate) or Multiple Myeloma."
+      },
+      {
+        "timestamp": "14:45",
+        "role": "Heme-Oncology Attending",
+        "content": "We need a whole-body scan to find the primary source. Draw blood immediately for tumor markers, Serum Protein Electrophoresis (SPEP), and free light chains."
+      },
+      {
+        "timestamp": "15:00",
+        "role": "Radiology - Incidental Findings Note",
+        "content": "As a side note, the tiny frontal cephalocele (synpic55154.jpg) and the huge posterior midline arachnoid cyst (synpic55335.jpg) seen on imaging are long-standing congenital/benign changes, unrelated to the current acute malignancy, but they complicate intracranial pressure management."
+      },
+      {
+        "timestamp": "15:15",
+        "role": "Radiology - Chest",
+        "content": "Large FOV rapid chest scan (synpic55670.jpg) completed. A soft tissue mass is seen in the right lung apex/superior mediastinum, strongly suggesting a primary lung cancer (e.g., Pancoast tumor) with bone metastases."
+      },
+      {
+        "timestamp": "15:45",
+        "role": "NICU Nurse",
+        "content": "Patient is deteriorating! Right pupil is dilated and unreactive. HR dropped to 50, BP spiked to 190/110. This is the Cushing reflex!"
+      },
+      {
+        "timestamp": "15:50",
+        "role": "Neurosurgery",
+        "content": "Edema from the massive infarct (synpic55230.jpg) has peaked, causing uncal herniation. The standard rescue protocol is an immediate decompressive hemicraniectomy."
+      },
+      {
+        "timestamp": "16:00",
+        "role": "MDT Ethical Debate",
+        "content": "Intense discussion breaks out in the conference room."
+      },
+      {
+        "timestamp": "16:05",
+        "role": "Heme-Oncology",
+        "content": "Hold on! This patient has end-stage systemic metastatic cancer. Extensive marrow infiltration (synpic55708.jpg), complete temporal bone destruction (synpic55564.jpg), plus a massive hemispheric stroke. Even if you remove his skull and save his life, he will be severely disabled with an extremely short life expectancy."
+      },
+      {
+        "timestamp": "16:10",
+        "role": "Neurosurgery",
+        "content": "If we don't decompress, he will be brain dead in hours. We are doctors; we cannot unilaterally issue a death sentence without biopsy pathology."
+      },
+      {
+        "timestamp": "16:15",
+        "role": "Neurology",
+        "content": "Even if decompression is successful, necrosis of the vast basal ganglia and motor cortex guarantees lifelong hemiplegia. Given the untreated primary lung mass (synpic55670.jpg), he would likely die of infection or tumor progression post-op."
+      },
+      {
+        "timestamp": "16:20",
+        "role": "Palliative Care Consult",
+        "content": "We must hold an emergent family meeting immediately. We need to clearly explain this 'catastrophic overlap' to his wife."
+      },
+      {
+        "timestamp": "16:30",
+        "role": "Family Meeting",
+        "content": "The medical team showed the wife the images of the vertebral artery dissection (synpic55889.jpg) and stroke (synpic55230.jpg), then explained the real killer behind the scenes: advanced metastatic tumor (synpic55832.jpg, synpic55708.jpg)."
+      },
+      {
+        "timestamp": "16:45",
+        "role": "Family Response",
+        "content": "The wife is devastated. She stated her husband highly valued dignity and quality of life, 'If he knew his body was full of cancer and he would be paralyzed in bed living on machines, he would absolutely never agree to brain surgery.'"
+      },
+      {
+        "timestamp": "17:00",
+        "role": "Code Status Change",
+        "content": "Family signed DNR (Do Not Resuscitate) and DNI (Do Not Intubate) orders. Declined decompressive surgery. Agreed to transition to Comfort Care."
+      },
+      {
+        "timestamp": "17:15",
+        "role": "NICU Attending",
+        "content": "Discontinuing Mannitol and Hypertonic Saline. Initiating continuous IV Morphine and Midazolam infusions to ensure the patient is pain-free and without respiratory distress."
+      },
+      {
+        "timestamp": "18:00",
+        "role": "Lab Results",
+        "content": "Tumor marker results: CEA 145 ng/mL (significantly elevated), CYFRA 21-1 is high. Basically supports pulmonary adenocarcinoma or NSCLC metastasis."
+      },
+      {
+        "timestamp": "19:30",
+        "role": "Nursing Note",
+        "content": "Patient's spontaneous respirations are weakening, showing Cheyne-Stokes respiration. SpO2 dropped to 85%. Family is by the bedside."
+      },
+      {
+        "timestamp": "20:45",
+        "role": "Clinical Note",
+        "content": "Patient's heart rate progressively decreased, leading to ventricular asystole. Clinical death confirmed."
+      },
+      {
+        "timestamp": "21:00",
+        "role": "MDT Final Autopsy Request",
+        "content": "Medical team requested a clinical pathological autopsy from the family to confirm the exact histological subtype of the tumor and the exact mechanism of vascular destruction. Family agreed to localized needle biopsies (lung and temporal bone)."
+      },
+      {
+        "timestamp": "22:00",
+        "role": "Case Summary - Pathophysiology",
+        "content": "This was an incredibly rare and fatal clinical cascade: Occult lung cancer (synpic55670.jpg) -> Bone marrow and skull base metastasis (synpic55708.jpg, synpic55564.jpg) -> Tumor invasion causing right vertebral artery dissection (synpic55889.jpg) -> Thrombus formation and embolization leading to massive cerebral infarction (synpic55230.jpg) -> Brain edema and lethal herniation."
+      },
+      {
+        "timestamp": "22:15",
+        "role": "Case Summary - Imaging Pitfalls",
+        "content": "This case was full of diagnostic pitfalls. If the radiologists stopped at finding the 'dissection and stroke' as the primary emergency, the underlying marrow abnormality would have been missed. Also, the congenital cephalocele (synpic55154.jpg), large cyst (synpic55335.jpg), and normal oropharyngeal views (synpic55352.jpg) introduced massive visual noise during initial reads."
+      },
+      {
+        "timestamp": "22:30",
+        "role": "Quality Control Review",
+        "content": "Reflecting on the patient's 'right ear fullness' 1 month ago: if a detailed otoscopic exam and early imaging screening had been performed then, the temporal bone lesion might have been discovered sooner, potentially averting the ultimate vascular catastrophe. However, given the extreme malignancy, overall prognosis remained exceedingly poor."
+      },
+      {
+        "timestamp": "23:00",
+        "role": "Case Status",
+        "content": "Closed/Deceased. Awaiting final biopsy pathology confirmation report for the archive."
+      }
+    ]
+  }
+}

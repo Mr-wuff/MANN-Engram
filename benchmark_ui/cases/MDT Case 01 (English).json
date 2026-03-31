@@ -1,0 +1,320 @@
+{
+  "mdt_case": {
+    "case_id": "01",
+    "title": "The 'Domino Effect' Patient",
+    "patient_profile": {
+      "age": 38,
+      "gender": "Male",
+      "chief_complaint": "Acute abdominal pain with altered mental status",
+      "history_of_present_illness": "Transferred from an outside hospital, reporting worsening right lower quadrant (RLQ) abdominal pain for 4 days.",
+      "past_medical_history": [
+        "Severe inflammatory bowel disease (Crohn's disease)",
+        "Chronic diarrhea",
+        "Recurrent kidney stones",
+        "History of motor vehicle accident (MVA) with prior chest imaging"
+      ]
+    },
+    "image_repository": [
+      {
+        "id": "A",
+        "region": "Abdomen/Pelvis",
+        "file_name": "synpic31510.jpg",
+        "role": "Key Image - Pneumoperitoneum / Bowel Perforation"
+      },
+      {
+        "id": "B",
+        "region": "Thorax (3D Bone Reconstruction)",
+        "file_name": "synpic31561.jpg",
+        "role": "Distractor - Remote old trauma"
+      },
+      {
+        "id": "C",
+        "region": "Renal (Ultrasound)",
+        "file_name": "synpic31918.jpg",
+        "role": "Key Image - Medullary sponge kidney / Nephrocalcinosis"
+      },
+      {
+        "id": "D",
+        "region": "Gastrointestinal (Fluoroscopy)",
+        "file_name": "synpic31921.jpg",
+        "role": "Key Image - Crohn's disease strictures"
+      },
+      {
+        "id": "E",
+        "region": "C-Spine (MRI)",
+        "file_name": "synpic31996.jpg",
+        "role": "Distractor - Trauma clearance / Mild degeneration"
+      },
+      {
+        "id": "F",
+        "region": "Neurovascular (Angiography)",
+        "file_name": "synpic32052.jpg",
+        "role": "Non-key but useful - Rule out large vessel occlusion (LVO)"
+      },
+      {
+        "id": "G",
+        "region": "Neuro/Brain (MRI)",
+        "file_name": "synpic32067.jpg",
+        "role": "Non-key but useful - Brain parenchyma evaluation"
+      },
+      {
+        "id": "H",
+        "region": "Neck/ENT (CT)",
+        "file_name": "synpic32365.jpg",
+        "role": "Key Image - Large cystic neck mass (Suspected parathyroid origin)"
+      }
+    ],
+    "ehr_and_transcript_log": [
+      {
+        "timestamp": "08:00",
+        "role": "Triage Note",
+        "content": "Patient arrived via EMS. Somnolent but arousable. GCS 13. Reports 4 days of worsening RLQ abdominal pain."
+      },
+      {
+        "timestamp": "08:15",
+        "role": "Vitals",
+        "content": "BP 90/60 mmHg, HR 115 bpm, RR 22 bpm, Temp 38.8°C, SpO2 96% on room air."
+      },
+      {
+        "timestamp": "08:30",
+        "role": "HPI",
+        "content": "Patient has a known history of severe inflammatory bowel disease, specifically Crohn's disease."
+      },
+      {
+        "timestamp": "08:32",
+        "role": "PMH",
+        "content": "Chronic diarrhea, recurrent kidney stones, and a remote motor vehicle accident requiring thoracic evaluation."
+      },
+      {
+        "timestamp": "08:45",
+        "role": "Lab Panel 1",
+        "content": "WBC 18.5k (85% neutrophils), Hgb 10.2, Plt 450k. CRP 145 mg/L."
+      },
+      {
+        "timestamp": "08:50",
+        "role": "Lab Panel 2",
+        "content": "Na 135, K 3.1, Cl 102, HCO3 16, BUN 45, Cr 2.1."
+      },
+      {
+        "timestamp": "08:55",
+        "role": "Calcium Studies",
+        "content": "Serum Calcium 11.2 mg/dL (elevated). Ionized Calcium 1.45 mmol/L."
+      },
+      {
+        "timestamp": "09:00",
+        "role": "ED Physician",
+        "content": "Ordered STAT CT Abdomen/Pelvis due to signs of peritonitis on exam."
+      },
+      {
+        "timestamp": "09:45",
+        "role": "Radiology Report - Abdomen",
+        "content": "Review of synpic31510.jpg confirms the primary abnormality is pneumoperitoneum."
+      },
+      {
+        "timestamp": "09:50",
+        "role": "General Surgery Consult",
+        "content": "Paged STAT. Patient requires emergent exploratory laparotomy for suspected bowel perforation."
+      },
+      {
+        "timestamp": "10:10",
+        "role": "Pre-op Review",
+        "content": "Anesthesia team notes a large anterior neck mass during airway assessment."
+      },
+      {
+        "timestamp": "10:15",
+        "role": "Radiology Report - Neck",
+        "content": "Review of synpic32365.jpg confirms a CT scan showing a large midline cystic lesion."
+      },
+      {
+        "timestamp": "10:20",
+        "role": "ENT Consult Note",
+        "content": "The mass in synpic32365.jpg appears to be a massive thyroglossal duct cyst or cystic parathyroid adenoma. Non-obstructing to the airway at present."
+      },
+      {
+        "timestamp": "10:30",
+        "role": "Nursing Note",
+        "content": "Patient had a brief episode of right-sided facial droop and expressive aphasia lasting 4 minutes."
+      },
+      {
+        "timestamp": "10:35",
+        "role": "Neurology Consult",
+        "content": "Stroke code activated. Patient is too hemodynamically unstable for a contrast MRI."
+      },
+      {
+        "timestamp": "10:45",
+        "role": "Radiology Report - Neuro",
+        "content": "Axial plane brain imaging (synpic32067.jpg) performed."
+      },
+      {
+        "timestamp": "10:50",
+        "role": "Radiology Report - Neurovascular",
+        "content": "Angiogram (synpic32052.jpg) evaluating the skull and contents shows no large vessel occlusion."
+      },
+      {
+        "timestamp": "11:00",
+        "role": "MDT Meeting Initiated",
+        "content": "Gastroenterology, General Surgery, Nephrology, and Neurology present to discuss operative timing vs. stroke risk."
+      },
+      {
+        "timestamp": "11:05",
+        "role": "GI Attending",
+        "content": "The patient's baseline is poor. Previous imaging (synpic31921.jpg) clearly showed stricturing Crohn's disease."
+      },
+      {
+        "timestamp": "11:10",
+        "role": "Surgery Attending",
+        "content": "The Crohn's has perforated. Look at the free air in synpic31510.jpg. We must operate now, regardless of the neuro findings."
+      },
+      {
+        "timestamp": "11:15",
+        "role": "Neurology Attending",
+        "content": "The TIA symptoms have fully resolved. The angiogram (synpic32052.jpg) is clear. Cleared for surgery."
+      },
+      {
+        "timestamp": "11:20",
+        "role": "Nephrology Attending",
+        "content": "Hold on. His creatinine is 2.1 and calcium is high. Look at the renal ultrasound we just got."
+      },
+      {
+        "timestamp": "11:25",
+        "role": "Radiology Report - Renal",
+        "content": "Ultrasound (synpic31918.jpg) demonstrates medullary nephrocalcinosis."
+      },
+      {
+        "timestamp": "11:30",
+        "role": "Nephrology Attending",
+        "content": "The nephrocalcinosis is likely secondary to enteric hyperoxaluria from his severe Crohn's, or primary hyperparathyroidism."
+      },
+      {
+        "timestamp": "11:35",
+        "role": "Endocrinology (Phone Consult)",
+        "content": "Given the high calcium and the neck mass on CT (synpic32365.jpg), we need to rule out a parathyroid crisis."
+      },
+      {
+        "timestamp": "11:40",
+        "role": "Lab Add-on",
+        "content": "Intact PTH level drawn, pending."
+      },
+      {
+        "timestamp": "11:45",
+        "role": "Orthopedics (Passing by)",
+        "content": "Why is there a C-spine MRI (synpic31996.jpg) on the board?"
+      },
+      {
+        "timestamp": "11:50",
+        "role": "ED Physician",
+        "content": "That was a trauma protocol from an outside hospital transfer prior to the acute abdomen. It evaluates the spine and contents."
+      },
+      {
+        "timestamp": "11:55",
+        "role": "Orthopedics",
+        "content": "And the 3D reconstruction of the musculoskeletal system (synpic31561.jpg)?"
+      },
+      {
+        "timestamp": "12:00",
+        "role": "ED Physician",
+        "content": "Also historical, from a prior MVA. Purely incidental to today's crisis."
+      },
+      {
+        "timestamp": "12:05",
+        "role": "OR Charge Nurse",
+        "content": "OR 4 is ready. We need a decision."
+      },
+      {
+        "timestamp": "12:10",
+        "role": "Surgery Attending",
+        "content": "We cannot wait for the PTH. If we don't wash out this abdomen, he dies of sepsis."
+      },
+      {
+        "timestamp": "12:15",
+        "role": "Anesthesia",
+        "content": "I will manage the hypercalcemia with aggressive fluids and loop diuretics intraoperatively."
+      },
+      {
+        "timestamp": "12:20",
+        "role": "Intraoperative Note 1",
+        "content": "Midline laparotomy performed. Frank purulent fluid encountered in the peritoneum."
+      },
+      {
+        "timestamp": "12:30",
+        "role": "Intraoperative Note 2",
+        "content": "Perforation identified at the terminal ileum, heavily diseased by Crohn's."
+      },
+      {
+        "timestamp": "12:45",
+        "role": "Intraoperative Note 3",
+        "content": "Ileocecectomy performed. End ileostomy created due to massive contamination."
+      },
+      {
+        "timestamp": "13:30",
+        "role": "PACU Arrival",
+        "content": "Patient extubated, hemodynamically stable on low-dose norepinephrine."
+      },
+      {
+        "timestamp": "14:00",
+        "role": "Lab Result",
+        "content": "Intact PTH returns at 450 pg/mL (Normal 15-65)."
+      },
+      {
+        "timestamp": "14:15",
+        "role": "Endocrinology Note",
+        "content": "Hypercalcemia is parathyroid-driven. The neck mass is highly suspicious for parathyroid carcinoma or a massive adenoma."
+      },
+      {
+        "timestamp": "14:30",
+        "role": "MDT Reconvenes",
+        "content": "Teams regroup to assess post-operative status."
+      },
+      {
+        "timestamp": "14:35",
+        "role": "Nephrology",
+        "content": "His urine output is dropping. The nephrocalcinosis coupled with intraoperative hypotension is causing Acute Tubular Necrosis (ATN)."
+      },
+      {
+        "timestamp": "14:40",
+        "role": "ICU Attending",
+        "content": "We are initiating Continuous Renal Replacement Therapy (CRRT)."
+      },
+      {
+        "timestamp": "14:50",
+        "role": "Neurology",
+        "content": "Patient is waking up. Moving all four extremities. No focal deficits. The TIA was likely an artifact of hemodynamic instability or calcium derangement."
+      },
+      {
+        "timestamp": "15:00",
+        "role": "ENT Attending",
+        "content": "Once he is off pressors, we need to biopsy that neck mass. If it's a functioning parathyroid carcinoma, it will continue to destroy his kidneys."
+      },
+      {
+        "timestamp": "15:15",
+        "role": "GI Attending",
+        "content": "The surgical pathology from the resected bowel will confirm the extent of the Crohn's, but synpic31921.jpg gave us the roadmap early on."
+      },
+      {
+        "timestamp": "15:30",
+        "role": "Infectious Disease Consult",
+        "content": "Recommends broad-spectrum coverage: Meropenem and Micafungin for intra-abdominal sepsis."
+      },
+      {
+        "timestamp": "16:00",
+        "role": "Radiology Addendum 1",
+        "content": "Re-reviewed the historical 3D CT (synpic31561.jpg). No acute rib fractures, purely old remodeling."
+      },
+      {
+        "timestamp": "16:15",
+        "role": "Radiology Addendum 2",
+        "content": "C-Spine MRI (synpic31996.jpg) shows mild degenerative changes, no cord compression."
+      },
+      {
+        "timestamp": "18:00",
+        "role": "ICU Evening Hand-off",
+        "content": "Patient remains critical but stable. Primary issues: 1. Post-op perforated Crohn's; 2. Hypercalcemic crisis likely secondary to neck mass; 3. AKI on CKD exacerbated by medullary nephrocalcinosis."
+      },
+      {
+        "timestamp": "20:00",
+        "role": "Final MDT Consensus Plan",
+        "content": "1. Continue CRRT. 2. Monitor for post-op ileus. 3. Schedule fine needle aspiration (FNA) of the neck mass (synpic32365.jpg) once coagulation profile normalizes."
+      }
+    ]
+  }
+}

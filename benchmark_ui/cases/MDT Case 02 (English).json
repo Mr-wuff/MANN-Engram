@@ -1,0 +1,281 @@
+{
+  "mdt_case": {
+    "case_id": "02",
+    "title": "The 'Hidden Sentinel' Patient",
+    "patient_profile": {
+      "age": 52,
+      "gender": "Female",
+      "chief_complaint": "Severe RLQ pain for 12 hours, accompanied by wrist pain from an unexplained fall 1 day ago",
+      "history_of_present_illness": "Patient developed sudden continuous colicky right lower quadrant (RLQ) pain 12 hours ago with nausea and vomiting. Family adds that the patient fell flat on the ground unprovoked 1 day ago, bracing with her right hand causing wrist swelling and pain; she had a brief 'staring' spell and confusion, which the family attributed to being startled.",
+      "past_medical_history": [
+        "Previously healthy",
+        "Mild hypertension, non-compliant with medication",
+        "Denies family history of malignancy"
+      ]
+    },
+    "image_repository": [
+      {
+        "id": "A",
+        "region": "Abdomen (Coronal CT)",
+        "file_name": "synpic41140.jpg",
+        "role": "Key Image - Acute appendicitis (shows enlarged appendix and periappendiceal fat stranding)"
+      },
+      {
+        "id": "B",
+        "region": "Pelvis (Axial CT of lower abdomen)",
+        "file_name": "synpic41525.jpg",
+        "role": "Key Image / Concurrent - Epiploic appendagitis"
+      },
+      {
+        "id": "C",
+        "region": "Musculoskeletal (Wrist X-ray)",
+        "file_name": "synpic41736.jpg",
+        "role": "Distractor - Orthopedic wrist film (no obvious displaced fracture, explains the physical consequence of the fall)"
+      },
+      {
+        "id": "D",
+        "region": "Skull Base/Head (Non-contrast Head CT)",
+        "file_name": "synpic41503.jpg",
+        "role": "Non-key but useful - Post-seizure hemorrhage rule-out (no acute cerebral hemorrhage)"
+      },
+      {
+        "id": "E",
+        "region": "Brain (MRI FLAIR)",
+        "file_name": "synpic40732.jpg",
+        "role": "Key Image - Large bilateral frontal hyperintensity / Severe vasogenic cerebral edema"
+      },
+      {
+        "id": "F",
+        "region": "Brain (Sagittal MRI)",
+        "file_name": "synpic40809.jpg",
+        "role": "Core Key Image - Huge irregular cystic-solid / necrotic brain tumor"
+      },
+      {
+        "id": "G",
+        "region": "Brain (Sagittal MRI Supplement)",
+        "file_name": "synpic41044.jpg",
+        "role": "Key Image - Additional enhancing nodule posteriorly (indicating multiple metastases)"
+      },
+      {
+        "id": "H",
+        "region": "Chest (Chest CT Lung Window)",
+        "file_name": "synpic41589.jpg",
+        "role": "Distractor / Search for primary - No obvious primary lung mass"
+      },
+      {
+        "id": "I",
+        "region": "Neck/Face (Cervicofacial MRI)",
+        "file_name": "synpic41011.jpg",
+        "role": "Distractor - Cervical lymph node and soft tissue evaluation"
+      },
+      {
+        "id": "J",
+        "region": "Skull Base (Axial MRI)",
+        "file_name": "synpic41102.jpg",
+        "role": "Distractor - Skull base field of view evaluation"
+      }
+    ],
+    "ehr_and_transcript_log": [
+      {
+        "timestamp": "08:00",
+        "role": "ED Triage",
+        "content": "52-year-old female presents with 'migratory RLQ pain for 12 hours'. Patient appears in distress, wearing a simple splint on her right wrist."
+      },
+      {
+        "timestamp": "08:10",
+        "role": "Vitals",
+        "content": "BP 135/85 mmHg, HR 98 bpm, RR 18 bpm, Temp 37.9°C, SpO2 99%."
+      },
+      {
+        "timestamp": "08:15",
+        "role": "ED Physician",
+        "content": "Exam: Pronounced tenderness at McBurney's point with rebound tenderness. Right wrist is tender and mildly swollen. Ordered STAT abdominal CT and wrist X-ray."
+      },
+      {
+        "timestamp": "08:30",
+        "role": "Lab Results",
+        "content": "WBC 14.2 x10^9/L (88% neutrophils). CRP 45 mg/L. HCG negative. Basic Metabolic Panel (BMP) is normal."
+      },
+      {
+        "timestamp": "08:45",
+        "role": "Radiology - Ortho",
+        "content": "Wrist X-ray (synpic41736.jpg): No obvious displaced fracture or dislocation. Likely soft tissue contusion or micro-fracture."
+      },
+      {
+        "timestamp": "09:30",
+        "role": "Radiology - Abdomen",
+        "content": "Coronal abdominal CT (synpic41140.jpg): Appendix is markedly thickened (11mm diameter) with surrounding fat stranding, consistent with acute appendicitis."
+      },
+      {
+        "timestamp": "09:35",
+        "role": "Radiology Addendum",
+        "content": "On the axial lower abdomen CT slice (synpic41525.jpg), an ovoid fat-density lesion with a hyperdense ring is observed adjacent to the colon, suggesting concurrent primary epiploic appendagitis."
+      },
+      {
+        "timestamp": "09:40",
+        "role": "General Surgery Consult",
+        "content": "Images reviewed. The culprit of the RLQ pain is likely the superimposition of acute appendicitis and epiploic appendagitis. Indicates emergent surgery. Planned for laparoscopic appendectomy."
+      },
+      {
+        "timestamp": "10:30",
+        "role": "Anesthesia",
+        "content": "Pre-op assessment: ASA II. Patient complains of a mild headache, attributing it to poor sleep. Airway assessment is normal. Cleared for general anesthesia."
+      },
+      {
+        "timestamp": "11:00",
+        "role": "Intraoperative Note",
+        "content": "Laparoscopic exploration confirmed suppurative appendicitis. The diseased epiploic appendage near the cecum was also resected. Surgery went smoothly, lasting 45 mins."
+      },
+      {
+        "timestamp": "12:30",
+        "role": "PACU",
+        "content": "Patient successfully extubated, awake, vitals stable. Transferred to the general surgical ward."
+      },
+      {
+        "timestamp": "15:45",
+        "role": "Ward Nurse - Emergency Call",
+        "content": "Code Blue! Patient suddenly lost consciousness, exhibiting tonic-clonic generalized seizures, upward eye deviation, and frothing at the mouth. Episode lasted ~2 mins."
+      },
+      {
+        "timestamp": "15:50",
+        "role": "Rapid Response Team",
+        "content": "Administered IV Diazepam 5mg. Patient is currently in a post-ictal state, GCS 8."
+      },
+      {
+        "timestamp": "16:00",
+        "role": "Neurology Consult",
+        "content": "New-onset adult seizure. Correlating with the family's description of 'unprovoked fall and staring' yesterday, it's highly likely yesterday's fall was due to a complex partial seizure (explaining the wrist injury). Ordered STAT Head CT to rule out bleed."
+      },
+      {
+        "timestamp": "16:30",
+        "role": "Radiology - Neuro CT",
+        "content": "Non-contrast Head CT (synpic41503.jpg): No acute subarachnoid or parenchymal hemorrhage. However, multiple hypodense areas are seen in the frontal and parietal lobes with mild midline shift. Recommend emergent MRI with contrast."
+      },
+      {
+        "timestamp": "16:45",
+        "role": "ICU Transfer",
+        "content": "Due to the risk of brain herniation and need for airway protection, patient is transferred to the Neuro ICU. Started IV Levetiracetam."
+      },
+      {
+        "timestamp": "17:30",
+        "role": "Radiology - Neuro MRI",
+        "content": "MRI FLAIR sequence (synpic40732.jpg) demonstrates massive hyperintensity in the bilateral frontal lobes, indicating extremely severe vasogenic brain edema."
+      },
+      {
+        "timestamp": "17:35",
+        "role": "Radiology - Neuro MRI 2",
+        "content": "Sagittal contrast-enhanced MRI (synpic40809.jpg) reveals an alarming lesion: A huge, irregular, centrally necrotic cystic-solid mass in the brain with irregular peripheral enhancement. Highly characteristic of an aggressive tumor (e.g., Glioblastoma Multiforme or a massive metastasis)."
+      },
+      {
+        "timestamp": "17:40",
+        "role": "Radiology - Neuro MRI 3",
+        "content": "Another sagittal slice (synpic41044.jpg) shows an additional enhancing nodular lesion posteriorly/supratentorially. Multiple lesions highly suggest: Brain Metastases!"
+      },
+      {
+        "timestamp": "18:00",
+        "role": "Emergency MDT Initiated",
+        "content": "Joint rounds by Neurosurgery, Neurology, Oncology, General Surgery, and Radiology."
+      },
+      {
+        "timestamp": "18:05",
+        "role": "Neurosurgery Attending",
+        "content": "The edema is too severe (synpic40732.jpg). Significant mass effect. Must administer high-dose Dexamethasone immediately. If it were a solitary lesion we'd consider resection, but synpic41044.jpg indicates multiple mets. Surgery can only offer biopsy and decompression."
+      },
+      {
+        "timestamp": "18:10",
+        "role": "Oncology",
+        "content": "Agreed. This massive necrotic lesion (synpic40809.jpg) is typical of malignancy. We need to find the primary source. Was the patient previously healthy? Any prior lung or breast cancer screenings?"
+      },
+      {
+        "timestamp": "18:15",
+        "role": "General Surgery",
+        "content": "We just resected her appendix! Pathology isn't back yet. Could the appendicitis be related to this?"
+      },
+      {
+        "timestamp": "18:20",
+        "role": "Oncology",
+        "content": "Primary appendiceal cancer with brain metastasis is exceedingly rare, but not impossible (e.g., neuroendocrine tumors or goblet cell adenocarcinoma). It could also be a complication (hypercoagulable state from malignancy causing ischemic epiploic appendagitis, or immunodeficiency triggering appendicitis)."
+      },
+      {
+        "timestamp": "18:30",
+        "role": "MDT Decision",
+        "content": "Initiate comprehensive systemic imaging to search for the primary tumor (PET-CT or whole-body CT)."
+      },
+      {
+        "timestamp": "19:00",
+        "role": "Radiology - Chest",
+        "content": "Chest CT lung window (synpic41589.jpg) completed. Lungs are clear, no obvious primary lung cancer mass or massive lymphadenopathy seen."
+      },
+      {
+        "timestamp": "19:15",
+        "role": "Radiology - Neck/Base",
+        "content": "Neck MRI (synpic41011.jpg) and axial skull base MRI (synpic41102.jpg) completed. Primarily to rule out primary head/neck cancers and meningeal dissemination. Currently no obvious positive primary lesion."
+      },
+      {
+        "timestamp": "19:30",
+        "role": "Oncology",
+        "content": "No obvious primary lesion found in the lungs or head/neck. This leaves the tumor in synpic40809.jpg as either a primary Glioblastoma Multiforme (GBM) with intra-cerebral dissemination, or an extremely occult Carcinoma of Unknown Primary (CUP)."
+      },
+      {
+        "timestamp": "19:40",
+        "role": "Neurology",
+        "content": "Reviewing the history: Yesterday's fall was not an accidental trip, but the first epileptic seizure caused by the compression of the intracranial tumor (synpic40809.jpg). The wrist fracture (synpic41736.jpg) was just the tip of the iceberg. The appendicitis (synpic41140.jpg) was an independent event that coincidently happened at this time, or induced by tumor-related stress."
+      },
+      {
+        "timestamp": "19:50",
+        "role": "Neurosurgery",
+        "content": "The patient's consciousness has somewhat improved after dehydration therapy. The risk of brain herniation she faces is far greater than the risk of abdominal infection."
+      },
+      {
+        "timestamp": "20:10",
+        "role": "Pathology - Preliminary",
+        "content": "General Surgery expedited the pathology for the appendix and epiploic appendage. Preliminary frozen sections: Extensive neutrophilic infiltration in the appendiceal wall, no obvious malignant cells. Confirmed as simple acute appendicitis."
+      },
+      {
+        "timestamp": "20:20",
+        "role": "MDT Consensus",
+        "content": "Patient suffered two life-threatening independent (or weakly correlated) diseases simultaneously: 1. Acute appendicitis (cured via emergent surgery); 2. Advanced destructive brain tumor (primary vs. metastatic TBD)."
+      },
+      {
+        "timestamp": "20:30",
+        "role": "Treatment Plan 1",
+        "content": "Neuro ICU: Continue IV Dexamethasone 10mg q6h to reduce edema around the massive lesion (synpic40732.jpg). Maintain anti-epileptic therapy."
+      },
+      {
+        "timestamp": "20:35",
+        "role": "Treatment Plan 2",
+        "content": "Neurosurgery: Given the multiplicity (synpic41044.jpg) and massive size (synpic40809.jpg), plan for stereotactic brain biopsy tomorrow once abdominal status stabilizes, to confirm pathological diagnosis (GBM vs. Metastasis)."
+      },
+      {
+        "timestamp": "20:40",
+        "role": "Treatment Plan 3",
+        "content": "General Surgery: Continue routine post-op antibiotics and nutritional support. Monitor abdominal signs to prevent poor anastomotic/stump healing due to high-dose steroids."
+      },
+      {
+        "timestamp": "20:45",
+        "role": "Treatment Plan 4",
+        "content": "Oncology: Await brain biopsy pathology. Concurrently arrange a comprehensive contrast-enhanced abdominal CT (to rule out occult GI sources like ovarian or pancreatic) and a mammogram."
+      },
+      {
+        "timestamp": "21:00",
+        "role": "ICU Evening Hand-off",
+        "content": "52yo female, post-op day 1 from laparoscopic appendectomy, transferred due to sudden generalized seizure. Imaging confirmed multiple massive intracranial lesions. Currently conscious (post high-dose steroid dehydration), pupils equal and reactive to light. Right wrist splint intact (synpic41736.jpg)."
+      },
+      {
+        "timestamp": "21:10",
+        "role": "ICU Nurse",
+        "content": "Updated family on the condition. Family is extremely shocked and emotionally devastated by the sudden appearance of a 'brain tumor'. Arranging Medical Social Worker for psychological support."
+      },
+      {
+        "timestamp": "21:30",
+        "role": "Attending Summary",
+        "content": "This case is highly deceptive. The patient initially presented with simple abdominal pain and wrist trauma, masking a deadly hidden threat deep within the brain. Without the grand mal seizure triggered post-op (likely due to anesthetic metabolism or hemodynamic shifts), the brain lesion might have progressed to herniation before discovery. This is a classic collision of multi-system emergencies."
+      },
+      {
+        "timestamp": "22:00",
+        "role": "Case Status",
+        "content": "Active/Ongoing. Awaiting Neurosurgery biopsy results tomorrow."
+      }
+    ]
+  }
+}
