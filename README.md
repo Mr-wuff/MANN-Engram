@@ -1,5 +1,3 @@
-
-
 <div align="center">
 
 # 🧠 MANN-Engram: Edge-Cloud Multimodal Semantic Router
@@ -10,6 +8,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-orange)](https://huggingface.co/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 
 ![MANN-Engram Architecture](https://via.placeholder.com/800x400/09090b/ffffff?text=MANN-Engram+Architecture+Diagram)
 
@@ -114,6 +113,34 @@ results = router.process_session(
 print(f"Core Request: {results['core_query']}")
 print(f"Purified Text: {results['purified_context']}")
 print(f"Tokens Saved: Filtered out {results['stats']['original_text_chunks'] - results['stats']['retained_text_chunks']} noise chunks!")
+```
+
+-----
+
+## 🌐 Enterprise Deployment (REST API)
+
+Need to integrate MANN-Engram into a frontend application (React/Vue) or a different backend ecosystem (Java/Go)? We provide a production-ready **FastAPI microservice** with native Docker support.
+
+### 1\. Run Locally (Development)
+
+Launch the API server directly from the source code:
+
+```bash
+uvicorn api_service.main:app --reload --port 8000
+```
+
+*👉 Access the interactive Swagger UI to test file uploads without writing code: [http://localhost:8000/docs](https://www.google.com/search?q=http://localhost:8000/docs)*
+
+### 2\. Deploy via Docker (Production)
+
+Easily spin up the routing engine in any cloud environment using the provided Dockerfile.
+
+```bash
+# Build the Docker image
+docker build -t mann-engram-api -f api_service/Dockerfile .
+
+# Run the container (Mount your local weights directory!)
+docker run -p 8000:8000 -v $(pwd)/weights:/app/weights mann-engram-api
 ```
 
 -----
